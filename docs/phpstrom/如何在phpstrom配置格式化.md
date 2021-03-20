@@ -1,4 +1,3 @@
-{% include toc.html html=content %}
 
 # 如何在 phpstrom 配置快速代码格式化
 
