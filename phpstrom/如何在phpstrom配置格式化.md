@@ -14,7 +14,6 @@
 
 使用 `which php-cs-fixer` 找到 `php-cs-fixer` 路径
 
-## 
 
 ## 步骤三
 
