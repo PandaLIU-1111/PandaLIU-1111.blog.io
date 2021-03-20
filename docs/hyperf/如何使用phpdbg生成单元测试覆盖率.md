@@ -1,3 +1,5 @@
+{% include toc.html html=content %}
+
 # 如何使用 phpdbg 生成单元测试覆盖率
 
 
