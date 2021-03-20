@@ -1,0 +1,57 @@
+# 如何使用 phpdbg 生成单元测试覆盖率
+
+
+
+修改 `phpunit.xml` 文件内容为如下
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="./test/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Tests">
+            <directory suffix="Test.php">./test</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        // 需要生成单元测试覆盖率的文件
+        <whitelist processUncoveredFilesFromWhitelist="false">
+            <directory suffix=".php">./app</directory>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="cover/"/>
+    </logging>
+</phpunit>
+```
+
+
+
+执行以下命令，生成单元测试覆盖率
+
+```shell
+phpdbg -dmemory_limit=1024M -qrr ./vendor/bin/co-phpunit -c phpunit.xml --colors=always
+```
+
+
+
+#  遇到的问题
+
+
+
+## Too many open files
+如果遇到 `Too many open files` 可以增加文件打开限制
+```shell
+ulimit -n 500000
+```
+
+## Linux下无法使用swoole问题
+phpdbg如果是自编译安装需要注意加载的php.ini问题，默认加载的php.ini是没有swoole扩展，需自己重新添加extension=swoole.so。
