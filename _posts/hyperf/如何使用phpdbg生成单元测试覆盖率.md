@@ -1,3 +1,10 @@
+---
+title: 如何使用 phpdbg 生成单元测试覆盖率
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
+categories: [hyperf, 单元测试, php]
+tags: [hyperf, 单元测试, php]     # TAG names should always be lowercase
+---
+
 
 # 如何使用 phpdbg 生成单元测试覆盖率
 

@@ -1,3 +1,9 @@
+---
+title: 如何在 phpstrom 配置快速代码格式化
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
+categories: [phpstrom, php]
+tags: [phpstrom, 代码格式化, php]     # TAG names should always be lowercase
+---
 
 # 如何在 phpstrom 配置快速代码格式化
 
