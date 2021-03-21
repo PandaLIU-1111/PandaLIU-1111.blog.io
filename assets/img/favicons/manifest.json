@@ -10,8 +10,8 @@ layout: compress
   "name": "{{ site.title }}",
   "short_name": "{{ site.title }}",
   "description": "{{ site.description }}",
-    "start_url": "{{ '/index.html' | relative_url }}",
-    "display": "fullscreen",
-    "theme_color": "#2a1e6b",
-    "background_color": "white"
+  "start_url": "{{ '/index.html' | relative_url }}",
+  "display": "fullscreen",
+  "theme_color": "#2a1e6b",
+  "background_color": "white"
 }
