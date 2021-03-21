@@ -1,6 +1,6 @@
 ---
 title: 如何在 phpstrom 配置快速代码格式化
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
+date: 2021-03-20
 categories: [phpstrom, php]
 tags: [phpstrom, 代码格式化, php]     # TAG names should always be lowercase
 ---
@@ -28,7 +28,7 @@ tags: [phpstrom, 代码格式化, php]     # TAG names should always be lowercas
 
 在 `phpstrom` 设置内找到 `external Tools`
 
-![image-20210320234817073](1.png)
+![image-20210320234817073](/assets/img/phpstrom/1.png)
 
 
 
@@ -36,7 +36,7 @@ tags: [phpstrom, 代码格式化, php]     # TAG names should always be lowercas
 
 添加格式化脚本
 
-![image-20210320235612717](2.png)
+![image-20210320235612717](/assets/img/phpstrom/2.png)
 
 
 
@@ -44,7 +44,7 @@ tags: [phpstrom, 代码格式化, php]     # TAG names should always be lowercas
 
 
 
-![image-20210320235920238](3.jpg)
+![image-20210320235920238](/assets/img/phpstrom/3.jpg)
 
 
 
@@ -66,7 +66,7 @@ Working directory: `$ProjectFileDir$`
 
 在 `Keymap` 内找到自己的扩展，并且设置快捷键，接下来就可以愉快的使用快捷键格式化当前的代码文件了
 
-![image-20210321000425415](4.png)
+![image-20210321000425415](/assets/img/phpstrom/4.png)
 
 
 
